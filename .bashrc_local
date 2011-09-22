@@ -1,0 +1,6 @@
+# Custom bash prompt pz                                                                                                                                                                                         
+PS1='\u@\h:\w\e[0;32m$(__git_ps1)\e[m\$ '
+alias emacs='emacs -nw'
+alias ..='cd ..'
+alias ...='cd ../..'
+EDITOR='emacs -nw'
