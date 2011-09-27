@@ -31,5 +31,7 @@
 (tool-bar-mode)
 
 ;; Ropemacs bindings for python autocompletion
-(require 'pymacs)
-(pymacs-load "ropemacs" "rope-")
+(eval-after-load "python-mode"
+  '(progn
+     (require 'pymacs)
+     (pymacs-load "ropemacs" "rope-")))
