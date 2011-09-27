@@ -5,3 +5,4 @@ PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w${lgreen}\$(_
 alias emacs='emacs -nw'
 alias ..='cd ..'
 alias ...='cd ../..'
+EDITOR=emacs
