@@ -1,6 +1,7 @@
-# Custom bash prompt pz                                                                                                                                                                                         
-PS1='\u@\h:\w\e[0;32m$(__git_ps1)\e[m\$ '
+# Custom bash prompt pz
+lgreen='\[\e[0;32m\]'
+back_to_normal='\[\e[0m\]'
+PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w${lgreen}\$(__git_ps1)${back_to_normal}\$ "
 alias emacs='emacs -nw'
 alias ..='cd ..'
 alias ...='cd ../..'
-EDITOR='emacs -nw'
