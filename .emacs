@@ -23,8 +23,9 @@
 
 (add-hook 'find-file-hook 'flymake-find-file-hook)
 (require 'color-theme)
+(color-theme-initialize)
 (setq color-theme-is-global t)
-;(color-theme-dark-laptop)
+(color-theme-dark-laptop)
 (mouse-wheel-mode t)
 (menu-bar-mode)
 (scroll-bar-mode)
@@ -35,3 +36,4 @@
   '(progn
      (require 'pymacs)
      (pymacs-load "ropemacs" "rope-")))
+
