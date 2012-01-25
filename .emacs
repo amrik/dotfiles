@@ -1,6 +1,7 @@
 (setq inhibit-splash-screen t)
 (global-font-lock-mode t)
 (setq make-backup-files nil)
+;(load-library "~/.emacs.d/color-theme.el")
 (setq auto-mode-alist (append '((".fbml" . xml-mode)) auto-mode-alist)) ; force fbml to load as xml
 (mouse-wheel-mode)
 (setq c-default-style "linux")
@@ -22,10 +23,10 @@
 		            '("\\.py\\'" flymake-pyflakes-init))) 
 
 (add-hook 'find-file-hook 'flymake-find-file-hook)
-(require 'color-theme)
-(color-theme-initialize)
-(setq color-theme-is-global t)
-(color-theme-dark-laptop)
+;(require 'color-theme)
+;(color-theme-initialize)
+;(setq color-theme-is-global t)
+;(color-theme-dark-laptop)
 (mouse-wheel-mode t)
 (menu-bar-mode)
 (scroll-bar-mode)
