@@ -6,3 +6,4 @@ alias emacs='emacs -nw'
 alias ..='cd ..'
 alias ...='cd ../..'
 EDITOR=emacs
+export GIT_EDITOR='emacs'
