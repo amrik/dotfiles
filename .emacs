@@ -3,7 +3,7 @@
 (setq make-backup-files nil)
 ;(load-library "~/.emacs.d/color-theme.el")
 (setq auto-mode-alist (append '((".fbml" . xml-mode)) auto-mode-alist)) ; force fbml to load as xml
-(mouse-wheel-mode)
+;(mouse-wheel-mode)
 (setq c-default-style "linux")
 (if (>= emacs-major-version 23)
     (set-default-font "Monospace-10"))
@@ -27,14 +27,19 @@
 ;(color-theme-initialize)
 ;(setq color-theme-is-global t)
 ;(color-theme-dark-laptop)
-(mouse-wheel-mode t)
-(menu-bar-mode)
-(scroll-bar-mode)
-(tool-bar-mode)
+;(mouse-wheel-mode t)
+;(menu-bar-mode)
+;(scroll-bar-mode)
+;(tool-bar-mode)
 
 ;; Ropemacs bindings for python autocompletion
 (eval-after-load "python-mode"
   '(progn
      (require 'pymacs)
      (pymacs-load "ropemacs" "rope-")))
+(load-library "~/.emacs.d/markdown-mode.el")
+(setq auto-mode-alist (append '((".md" . markdown-mode)) auto-mode-alist))
 
+(custom-set-variables
+ '(help-at-pt-timer-delay 0.9)
+ '(help-at-pt-display-when-idle '(flymake-overlay)))
