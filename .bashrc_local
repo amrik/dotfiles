@@ -7,3 +7,5 @@ alias ..='cd ..'
 alias ...='cd ../..'
 EDITOR=emacs
 export GIT_EDITOR='emacs'
+
+. /Users/amrik/git/z/z.sh
