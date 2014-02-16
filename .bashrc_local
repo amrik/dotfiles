@@ -10,3 +10,5 @@ export GIT_EDITOR='emacs'
 
 . /Users/amrik/git/z/z.sh
 alias gbc='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
+alias grhh='git reset --hard HEAD'
+alias e='emacsclient -t'
