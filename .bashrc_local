@@ -5,10 +5,11 @@ PS1="\[\e]0;\u@\h: \w\a\]${debian_chroot:+($debian_chroot)}\u@\h:\w${lgreen}\$(_
 alias emacs='emacs -nw'
 alias ..='cd ..'
 alias ...='cd ../..'
-EDITOR=emacs
-export GIT_EDITOR='emacs'
+EDITOR='emacsclient -t'
+export GIT_EDITOR='emacsclient -t'
 
 . /Users/amrik/git/z/z.sh
 alias gbc='git branch --merged | grep -v "\*" | xargs -n 1 git branch -d'
 alias grhh='git reset --hard HEAD'
 alias e='emacsclient -t'
+alias grph='git rev-parse HEAD'
