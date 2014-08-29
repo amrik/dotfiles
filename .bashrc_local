@@ -1,3 +1,4 @@
+source /Users/amrik/.oh-my-zsh/plugins/gitfast/git-prompt.sh
 # Custom bash prompt pz
 lgreen='\[\e[0;32m\]'
 back_to_normal='\[\e[0m\]'
